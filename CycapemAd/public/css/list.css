@@ -1,0 +1,104 @@
+/* Estilos generales para la tabla */
+.table-container {
+    width: 90%; /* Ancho máximo del contenedor */
+    max-width: 1200px; /* Ancho máximo específico */
+    margin: 20px auto; /* Centrando el contenedor en la pantalla */
+    overflow-x: auto; /* Barra de desplazamiento horizontal si es necesario */
+}
+
+#clientesTabla {
+    width: 100%; /* Ancho completo del contenedor */
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para el encabezado de la tabla */
+#clientesTabla thead {
+    background-color: #2c3e50; /* Azul oscuro */
+    color: #ffffff; /* Texto blanco */
+}
+
+#clientesTabla th, #clientesTabla td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternar color de fondo de las filas */
+#clientesTabla tr:nth-child(even) {
+    background-color: #ecf0f1; /* Gris claro */
+}
+
+#clientesTabla tr:hover {
+    background-color: #bdc3c7; /* Gris intermedio */
+}
+
+/* Estilos para las imágenes */
+#clientesTabla img {
+    border-radius: 4px;
+    max-width: 100px; /* Tamaño máximo de la imagen */
+    height: auto;
+}
+
+/* Estilos para las acciones */
+#clientesTabla .actions {
+    display: flex;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+#clientesTabla .actions a, #clientesTabla .actions button {
+    background-color: #3498db; /* Azul claro para los enlaces */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#clientesTabla .actions a:hover, #clientesTabla .actions button:hover {
+    background-color: #2980b9; /* Azul más oscuro */
+}
+
+/* Estilos para el botón de eliminar */
+#clientesTabla .actions button {
+    background-color: #e74c3c; /* Rojo para los botones de eliminar */
+    cursor: pointer;
+}
+
+#clientesTabla .actions button:hover {
+    background-color: #c0392b; /* Rojo oscuro */
+}
+
+/* Estilos para el enlace de navegación */
+.link_nav_sub {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.link_nav_sub a {
+    color: #3498db; /* Color del enlace */
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #3498db; /* Borde del enlace */
+    border-radius: 4px;
+    padding: 10px 20px;
+    background-color: #ffffff; /* Fondo blanco */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.link_nav_sub a:hover {
+    background-color: #3498db; /* Fondo azul claro al pasar el ratón */
+    color: #ffffff; /* Texto blanco */
+}
+
+/* Estilos para el título h1 */
+h1 {
+    text-align: center;
+    color: #2c3e50; /* Azul oscuro */
+    margin: 20px 0;
+}
